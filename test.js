@@ -12,8 +12,6 @@ function oncmd_oumu(pl,args){
     }
 }
 
-mc.listen("onJoin",join())
-
-function join(){
+mc.listen("onJoin",function(){
     mc.broadcast("こんにちは");
-}
+});
